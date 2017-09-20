@@ -5,52 +5,685 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-    
-<% unless flash.empty? %>
-     <script type="text/javascript">
-          <% flash.each do |f| %>
-	      <% type = f[0].to_s.gsub('alert', 'error').gsub('notice', 'info') %>
-	     	 toastr['<%= type %>']('<%= f[1] %>');
-	   <% end %>
-     </script>
-<% end %>
-   
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+  
+ 
+  <!-- Topbar -->
+      <nav class="topbar topbar-expand-sm topbar-sticky">
       <div class="container">
-        <h1 class="display-3">Kleo</h1>
-        <p>Supercharge your life with a 24/7 team of assistants behind you.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        
+        <div class="topbar-left">
+          <button class="topbar-toggler">&#9776;</button>
+          <a class="topbar-brand" href="index.html">
+            <img class="logo-default" src="https://image.ibb.co/noDkrv/kleo2.png" alt="logo">
+          </a>
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+
+
+        <div class="topbar-right">
+          <ul class="topbar-nav nav">
+            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-pricing">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-scrollto="section-faq">Login</a></li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    
+    <!-- END Topbar -->
+
+  <header class="header pg-35  bg-img t-fullscreen" data-overlay="8" data-overlay-primary="true" style="background-image: url(https://cdn.suwalls.com/wallpapers/vector/city-skyline-26532-1920x1200.jpg)">
+    
+      <div class="container text-center">
+
+        <div class="row h-full">
+          <div class="col-12 col-lg-8 offset-lg-2 align-self-center">
+            <div class="section-dialog">
+<!--<img src="https://image.flaticon.com/icons/png/512/470/470345.png" alt="Mountain View" style="width:150px;height:150px;"> <br>-->
+            <h1 class="hidden-sm-down" style="font-size: 2.5em; padding-bottom: 30px; padding-top: 20px;">Every startup needs <span class="text-primary" data-type="a marketer, a tech guru, a designer, an analyst, a researcher, a tester, graphics"></span>  </h1>
+            <h5 style="padding-bottom: 10px;"> Get a team of specialists for your business instantly, without the hassle or premium. </h5>
+            <h1 class="hidden-md-up" style="line-space:20px">A Template For <br><span class="text-primary" data-type="Startups, WebApps, Softwares, Entrepreneurs"></span></h1>
+                      <div class="col-12 offset-md-3 col-md-6 col-lg-6">
+              <button class="btn btn-block btn-primary">Meet your Team Manager</button>
+              
+            </div>
+            
+            <!--<p class="fs-20 hidden-sm-down" style="font-weight: 400"> We fill in your gaps with a multi-skilled team of experienced professionals ready to support your business wherever it needs it.</p>-->
+            <!--<p class="fs-15 hidden-md-up">TheSaaS Is an elegant, modern and fully customizable template developed for software, SaaS product and Web Applications.</p>-->
+            <br>
+
+                        <!--<p class="mt-4"><small>* 15 Day Guarantee</small></p>-->
+              <!--<a class="scroll-down-2" href="#"><span></span></a>-->
+            </div>
+            <!--        <a class="btn btn-xl btn-round btn-primary fs-18 fw-500 w-350 shadow-3 hidden-xs-down" href="#">Get Started</a>-->
+            <!--<a class="btn btn-lg btn-round btn-primary fw-500 w-250 shadow-3 hidden-sm-up" href="#">Get Started</a>-->
+            <br>
+            
+              <div class="gogo" style="margin: auto; border: 2px #deedff solid; background-color: #deedff; border-radius: 9px; padding-top:10px; width: 24em;">
+              <p class="lead" ><i class="fa fa-trophy" aria-hidden="true" style="color: gold; font-size:1.5em;"></i> <b>14 day </b> money-back guarantee.</p>
+              </div>
+            <hr class="w-50 hidden-sm-down">
+
+
+            <p>
+
+            </p>
+            
+
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+<!-- Header -->
+<!--    <header class="header pb-0 h-fullscreen bb-1">-->
+<!--      <div class="container">-->
+<!--        <div class="row h-full">-->
+<!--          <div class="col-12 text-center align-self-center">-->
+<!--            <div>-->
+<!--<img src="https://image.flaticon.com/icons/png/512/525/525935.png" alt="Mountain View" style="width:200px;height:200px;"> <br>-->
+
+<!--</div>-->
+<!--         <h1 class="fs-50 fw-600 lh-15 hidden-xs-down">Supercharge your Startup<br></h1>-->
+<!--            <h1 class="fs-30 fw-600 lh-15 hidden-sm-up">Built for Authors</h1>-->
+<!--            <br>-->
+<!--            <p class="fs-20">Kleo is the ultimate <span class="fw-400">business operations team</span> for startups, entrepreneurs and freelancers<span class="hidden-xs-down"><br></span>-->
+<!--            </p>            <br>-->
+<!--<button class="button3">-->
+<!--  <span class="button__inner">Sign Up</span>-->
+<!--</button>-->
+
+<!--<button class="button3 button3--secondary">-->
+<!--  <span class="button__inner">Learn More</span>-->
+<!--</button>-->
+<!--<br>-->
+
+<!--            <br>-->
+<!--            <p class="mt-4"><small>7 Day Happiness Guarantee.</small></p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </header>-->
+    <!-- END Header -->
+
+
+
+
+    <!-- Main container -->
+    <main class="main-content">
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | CTA 2
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <section class="section py-40" style="background-color: #fff; border-top: 1px solid #ebebeb">
+        <div class="container">
+          <div class="row gap-y align-items-center text-center text-md-left">
+            <div class="col-12 col-md-6">
+              <h4 class="fw-300 mb-0">Trusted by over 85+ Companies</h4>
+            </div>
+
+            <div class="col-12 col-md-2 ">
+              <img src="https://www.oystext.com/wp-content/uploads/2015/04/logo-800x150-350x96.png" alt="..." style="width:140px;height:37px;">
+            </div>
+            <div class="col-12 col-md-2 ">
+                          <img src=" https://ph-files.imgix.net/a7954bb3-0980-4c75-9f43-9284b2c6c911?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=200&h=100&fit=max" alt="..." style="width:130px;height:40px;">
+</div>
+           <div class="col-12 col-md-2 ">
+                          <img src="https://about.mattermost.com/wp-content/uploads/2017/08/Mattermost-Logo-Blue.svg" alt="..." style="width:140px;height:40px;">
+</div>
+          </div>
+          
+        </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Basic
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Feature 3
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+
+      <section class="section" style="border-top: 1px solid #ebebeb">
+        <div class="container">
+          <header class="section-header">
+<br>
+            <small>Features</small>
+            <h2>Why StartOps?</h2>
+            <hr>
+            <!--<p class="lead">We fill in your gaps with a multi-skilled team of experienced professionals ready to support your business wherever it needs it.</p>-->
+          </header>
+
+          <div class="row gap-y">
+            
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-bordered card-hover-shadow text-center">
+              <div class="card-block">
+              <p class="feature-icon"><img src="https://image.flaticon.com/icons/svg/475/475277.svg" alt="..." style="width:100px;height:100px;"></p>
+              <h5>Dedicated Team Manager</h5>
+              <p class="card-text">You deal with an expert consultant who manages your needs whilst providing expert insight and advice.</p>
+            </div>
+                   </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4">
+                              <div class="card-bordered card-hover-shadow text-center">
+              <div class="card-block">
+              <p class="feature-icon"><img src="https://image.flaticon.com/icons/svg/313/313062.svg" alt="..." style="width:100px;height:100px;"></p>
+              <h5>Flexible Budgets</h5>
+              <p class="card-text">There is no set fee, as we have many pre-vetted freelancers that work for a wide variety of budgets.</p>
+            </div>
+                   </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                              <div class="card-bordered card-hover-shadow text-center">
+              <div class="card-block">
+              <p class="feature-icon"><img src="https://image.flaticon.com/icons/svg/271/271134.svg" alt="..." style="width:100px;height:100px;"></p>
+              <h5>Multi Coverage</h5>
+              <p class="card-text">Whether it's Slack, e-mail, SMS, Skype, FB messenger, or our native apps we are available offline and online .</p>
+            </div>
+                   </div>
+            </div>
+          </div>
+          <!--<hr class="w-50 ml-0">-->
+            <div class="row gap-y">
+            
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card-bordered card-hover-shadow text-center">
+              <div class="card-block">
+              <p class="feature-icon"><img src="https://image.flaticon.com/icons/svg/321/321854.svg" alt="..." style="width:100px;height:100px;"></p>
+              <h5>Highly Skilled Team</h5>
+              <p class="card-text">Everyone working on your team is pre-vetted for quality, and is picked specifically with your project in mind.</p>
+            </div>
+                   </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4">
+                              <div class="card-bordered card-hover-shadow text-center">
+              <div class="card-block">
+              <p class="feature-icon"><img src="https://image.flaticon.com/icons/png/512/138/138365.png" alt="..." style="width:100px;height:100px;"></p>
+              <h5>Secure & Confidential</h5>
+              <p class="card-text">We'll cover all the NDA's and security arrangements that you would normally have to deal with.</p>
+            </div>
+                   </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                              <div class="card-bordered card-hover-shadow text-center">
+              <div class="card-block">
+              <p class="feature-icon"><img src="https://image.flaticon.com/icons/svg/362/362334.svg" alt="..." style="width:100px;height:100px;"></p>
+              <h5>Results Guarantee</h5>
+              <p class="card-text">If the work was not completely to your expectations, we'll refund you or do it again to your preference.</p>
+            </div>
+                   </div>
+            </div>
+          </div>
+
+
+          <!--<p><a href="#">See what our team can do <i class="fa fa-angle-double-right fs-9 ml-4"></i></a></p>-->
+        </div>
+      </section>
+      
+      <section class="section text-center" style="background-color: #f8f8f8;">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-12 offset-md-3 col-md-6">
+              <p><img src="http://thetheme.io/thesaas/assets/img/icon-planet.png" alt="..."></p>
+              <br>
+              <h3 class="fw-900 mb-20">Become an Outstanding Startup</h3>
+              <div class="gogo" style="border: 2px #deedff solid; background-color: #deedff; border-radius: 6px; padding-top:10px;">
+              <p class="lead" ><i class="fa fa-trophy" aria-hidden="true" style="color: gold; font-size:1.5em;"></i> 15 day refund guarantee, we're sure you wont need it.</p>
+              </div>
+              <br>
+              
+              <a class="btn btn-lg btn-round btn-success" href="#">Arrange a Consultation with a Team Leader</a>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+
+      <!--
+      <!--|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒-->
+      <!--| Feature 1-->
+      <!--|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒-->
+      <!--!-->-->
+
+
+      <!--<section class="section ">-->
+      <!--  <div class="container">-->
+      <!--    <header class="section-header">-->
+      <!--      <small>Features</small>-->
+      <!--      <h2>So Intuitive, So Easy</h2>-->
+      <!--      <hr>-->
+      <!--      <p class="lead">We understand how difficult life is for start-ups, thats why our aim is to provide you with an on-demand, multi-skilled, and highly experienced-->
+      <!--      team to get you to the finish-line no matter what it takes.</p>-->
+      <!--    </header>-->
+
+      <!--    <div class="row gap-y">-->
+            
+      <!--      <div class="col-12 col-md-6 col-xl-4 feature-1">-->
+      <!--        <p class="feature-icon text-dark"><i class="fa fa-lightbulb-o"></i></p>-->
+      <!--        <h5>Experts</h5>-->
+      <!--        <p>This isn't our first time around the block</p>-->
+      <!--      </div>-->
+
+
+      <!--      <div class="col-12 col-md-6 col-xl-4 feature-1">-->
+      <!--        <p class="feature-icon text-info"><i class="fa fa-cog"></i></p>-->
+      <!--        <h5>Multi-Skilled</h5>-->
+      <!--        <p>Our team has capabilities in many business aspects </p>-->
+      <!--      </div>-->
+
+
+      <!--      <div class="col-12 col-md-6 col-xl-4 feature-1">-->
+      <!--        <p class="feature-icon"><i class="fa fa-users"></i></p>-->
+      <!--        <h5></h5>-->
+      <!--        <p>There is an extensive amount of UI elements and shortcodes to easily develop your blocks.</p>-->
+      <!--      </div>-->
+
+
+      <!--      <div class="col-12 col-md-6 col-xl-4 feature-1">-->
+      <!--        <p class="feature-icon text-warning"><i class="fa fa-bolt"></i></p>-->
+      <!--        <h5>On-Demand</h5>-->
+      <!--        <p>We're available whenever you need us.</p>-->
+      <!--      </div>-->
+
+
+      <!--      <div class="col-12 col-md-6 col-xl-4 feature-1">-->
+      <!--        <p class="feature-icon text-danger"><i class="fa fa-code"></i></p>-->
+      <!--        <h5>Clean Code</h5>-->
+      <!--        <p>You can find our code well organized, commented, readable and easy for modification.</p>-->
+      <!--      </div>-->
+
+
+      <!--      <div class="col-12 col-md-6 col-xl-4 feature-1">-->
+      <!--        <p class="feature-icon text-success"><i class="icon-chat"></i></p>-->
+      <!--        <h5>Support</h5>-->
+      <!--        <p>Apart from free and regular updates, we are always ready to help you.</p>-->
+      <!--      </div>-->
+
+      <!--    </div>-->
+
+      <!--  </div>-->
+      <!--</section>-->
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Features
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      
+      
+      
+      
+      <section class="section" id="section-features" style="padding-top:10px">
+        <div class="container">
+          <header class="section-header">
+            <h2>We Can Support You At Every Stage</h2>
+            <hr>
+          </header>
+
+
+          <div class="row gap-y align-items-center">
+            <div class="col-12 col-md-5 text-center">
+              <img src="https://image.flaticon.com/icons/png/512/346/346195.png" alt="..." style="width:250px;height:250px;">
+            </div>
+
+            <div class="col-12 offset-md-1 col-md-6">
+              <h5>Seed and Development </h5>
+              <p>In some ways, this is the soul-searching phase. It’s where you take a step back and consider the feasibility of your business idea. 
+              Whether your plan is to bootstrap or get immediate funding, we'll assist you like no other.
+              </p>
+              <p>
+                
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Develop MVP <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Competitive Analysis <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Financial Modeling <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Logo Generation <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Pitch Review <br>
+                    </div>
+                    <div class="col">
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> App/Web Design <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Technical Consulting<br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Branding <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Beta Testers <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Research <br>
+                    </div>
+                  </div>                
+              </p>
+              And much much more...
+            </div>
+            </div>
+          </div>
+
+
+          <hr class="w-200 my-90">
+
+
+          <div class="row gap-y align-items-center">
+            <div class="col-12 col-md-6">
+              <h5>Startup</h5>
+              <p> We know this stage is the most risky in the entire lifecycle, however adaptability is key.
+              For most start-ups resources are thin and time is precious, having an incredibly
+                            efficient jack of all trades on the ride with you will empower your business and get it over the line.
+                            </p>
+                                            <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Marketing Campaigns <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Graphics and Animation <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Tech Consulting <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Research <br>
+                        
+                    </div>
+                    <div class="col">
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Blogging <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Getting Press <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Search Engine Optimisation <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Usage Reports <br>
+                    </div>
+                  </div>                
+              </p>
+              And much much more...
+            </div>
+            </div>
+
+            <div class="col-12 offset-md-1 col-md-5 text-center">
+              <img src="https://image.flaticon.com/icons/svg/439/439935.svg" alt="..." style="width:300px;height:300px;">
+            </div>
+          </div>
+
+
+          <hr class="w-200 my-90">
+
+
+          <div class="row gap-y align-items-center">
+            <div class="col-12 col-md-5 text-center">
+              <img src="https://image.flaticon.com/icons/svg/362/362998.svg" alt="..." style="width:300px;height:300px;">
+            </div>
+
+            <div class="col-12 offset-md-1 col-md-6">
+              <h5>Growth and Establishment</h5>
+              <p>Most start-ups in this stage will now have a steady source of revenue, and will be looking to expand their resources through dilligent research.</p>
+              <p>Whether it's recruitment, forecastings,  research reports, we can help make the process quick and efficient.</p>
+              
+                                                          <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Recruitment <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Market Research <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Lead Generation <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> A B Testing <br>
+                    </div>
+                    <div class="col">
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Research Reports <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Support Team <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Video Animation <br>
+                      <i class="fa fa-check-square-o" aria-hidden="true" style="color: green;"></i> Graphics Artists <br>
+                    </div>
+                  </div>                
+              </p>
+              And much much more...
+            </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
+      
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Features
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <!--<section class="section bg-gray">-->
+      <!--  <div class="container">-->
+      <!--    <div class="row gap-y">-->
+            
+      <!--      <div class="col-12 col-lg-4">-->
+      <!--        <div class="card card-bordered text-center">-->
+      <!--          <div class="card-block">-->
+      <!--            <p class="feature-icon"><img src="https://image.flaticon.com/icons/svg/215/215693.svg" alt="..." style="width:100px;height:100px;"></p>-->
+      <!--            <h4 class="card-title">Channels</h4>-->
+      <!--            <p class="card-text">We are available on demand, whenever you need us so there is no delay in getting you the help you need.</p>-->
+                  <!--<a class="fw-600 fs-12" href="#">Read more <i class="fa fa-chevron-right fs-9 pl-5"></i></a>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--      </div>-->
+
+
+      <!--      <div class="col-12 col-lg-4">-->
+      <!--        <div class="card card-bordered text-center">-->
+      <!--          <div class="card-block">-->
+      <!--            <p class="feature-icon"><img src="https://image.flaticon.com/icons/png/512/149/149065.png" alt="..." style="width:100px;height:100px;"></p>-->
+      <!--            <h4 class="card-title">Direct Messages</h4>-->
+      <!--            <p class="card-text">Your connected to our concierge whether its through e-mail, Facebook, Skype, Slack, SMS, our Android/Iphone app-->
+      <!--        we've always got you covered.</p>-->
+                  <!--<a class="fw-600 fs-12" href="#">Read more <i class="fa fa-chevron-right fs-9 pl-5"></i></a>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--      </div>-->
+
+
+      <!--      <div class="col-12 col-lg-4">-->
+      <!--        <div class="card card-bordered text-center">-->
+      <!--          <div class="card-block">-->
+      <!--            <p class="feature-icon"><img src="https://image.flaticon.com/icons/svg/554/554428.svg" alt="..." style="width:100px;height:100px;"></p>-->
+      <!--            <h4 class="card-title">Calls</h4>-->
+      <!--            <p class="card-text">When you work with us you get a team behind you, we discuss the best options altogether and brainstorm..</p>-->
+                  <!--<a class="fw-600 fs-12" href="#">Read more <i class="fa fa-chevron-right fs-9 pl-5"></i></a>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--      </div>-->
+
+      <!--    </div>-->
+      <!--  </div>-->
+      <!--</section>-->
+
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Reclaim your workday
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Pricing
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section bg-gray" id="section-pricing">
+        <div class="container">
+
+          <header class="section-header">
+            <h2>Affordable Pricing</h2>
+            <hr>
+            <p class="lead">Check out our FAQ for answers to any queries.</p>
+          </header>
+
+          <div class="row gap-y text-center">
+            
+            <div class="col-12 col-md-4">
+              <div class="pricing-1">
+                <p class="plan-name">Basic</p>
+                <br>
+                <h2 class="price"><span class="price-unit">$</span> 80</h2>
+                <p><small class="opacity-50">Per month</small></p>
+                <small>1 Bundle of Internal Work</small><br>
+                <small>Unlimited External Work</small><br>
+                <small>Standard Support</small><br>
+                <small>External Team</small><br>
+                <small>Slack, Facebook, E-mail, and iPhone/Android Channels</small><br>
+                <small>Monthly Meeting</small><br>
+                <br>
+                <p class="text-center py-3"><a class="btn btn-primary" href="#">Get started</a></p>
+              </div>
+            </div>
+
+
+            <div class="col-12 col-md-4">
+              <div class="pricing-1">
+                <p class="plan-name">Standard</p>
+                <br>
+                <h2 class="price text-success"><span class="price-unit">$</span> 250</h2>
+                <p><small class="opacity-50">Per month</small></p>
+                <small>5 Bundles of Internal Work</small><br>
+                <small>Weekly Meetings</small><br>
+                <small>Unlimited External Work</small><br>
+                <small>Priority Support</small><br>
+                <small>Internal Team</small><br>
+                <small>Bi-weekly Business Report</small><br>
+                <small>Basic Channels + Slack, Voice Call and </small><br>
+                <small>Monthly Skype Catch-Up</small><br>
+                <br>
+                <p class="text-center py-3"><a class="btn btn-success" href="#">Get started</a></p>
+              </div>
+            </div>
+
+
+            <div class="col-12 col-md-4">
+              <div class="pricing-1">
+                <p class="plan-name">Plus</p>
+                <br>
+                <h2 class="price"><span class="price-unit">$</span> 500</h2>
+                <p><small class="opacity-50">Per month</small></p>
+
+                <small>12 Bundles of Internal Work</small><br>
+                <small>Any Channel</small><br>
+                <small>Internal Team</small><br>
+                <small>Weekly Reports</small><br>
+                <small>24/7 Availability</small><br>
+                <small>Unlimited Meetings</small><br>
+                <br>
+                <p class="text-center py-3"><a class="btn btn-primary" href="#">Get started</a></p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Partners
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section bg-gray py-40">
+        <div class="container">
+
+          <div class="partner partner-sm">
+            <img src="https://addcharts.com/static/img/logo-intercom_c.png" alt="...">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/c0/Twilio_logo.png" alt="...">
+            <img src="http://www.freepnglogos.com/uploads/linkedin-png-logo-23.png" alt="...">
+            <img src="https://www.reachengine.com/wp-content/uploads/2017/04/amazon_web_svcs.png" alt="...">
+            <img src="http://www.filmtrack.com/wp-content/uploads/2016/11/pwc.png" alt="...">
+            <img src="http://mutualrescue.org/wp-content/uploads/2016/12/press-logo-huffington-post.png" alt="...">
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+    </main>
+    <!-- END Main container -->
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+          <div class="col-12 col-lg-3">
+            <p class="text-center text-lg-left">
+              <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <ul class="nav nav-primary nav-hero">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="block-feature.html">Features</a>
+              </li>
+              <li class="nav-item hidden-sm-down">
+                <a class="nav-link" href="page-pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item hidden-sm-down">
+                <a class="nav-link" href="page-contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <div class="social text-center text-lg-right">
+              <a class="social-facebook" href="https://www.facebook.com/thethemeio"><i class="fa fa-facebook"></i></a>
+              <a class="social-twitter" href="https://twitter.com/thethemeio"><i class="fa fa-twitter"></i></a>
+              <a class="social-instagram" href="https://www.instagram.com/thethemeio/"><i class="fa fa-instagram"></i></a>
+              <a class="social-dribbble" href="https://dribbble.com/thethemeio"><i class="fa fa-dribbble"></i></a>
+            </div>
+          </div>
         </div>
       </div>
+    </footer>
+    <!-- END Footer -->
 
-      <hr>
 
-      <footer>
-        <p>&copy; Company 2017</p>
-      </footer>
-    </div> <!-- /container -->
+
+
+
 
 
     <!-- Bootstrap core JavaScript
