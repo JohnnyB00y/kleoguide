@@ -7063,6 +7063,9 @@ a.text-danger:hover, a.text-danger:focus {
   height: 680px;
 }
 
+.g-fullscreen {
+  height: 400px;
+}
 .h-fullscreen {
   height: 100vh;
 }

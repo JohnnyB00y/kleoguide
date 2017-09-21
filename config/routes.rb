@@ -7,7 +7,7 @@ devise_for :users, controllers: {sessions: "sessions"}
   # root 'welcome#index'
    root 'home#index'
      get '/dashboard' => 'dashboard#index'
-
+  get "/:page" => "home#pricing"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

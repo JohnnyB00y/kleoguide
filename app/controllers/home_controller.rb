@@ -8,6 +8,10 @@ class HomeController < ApplicationController
         render :layout => false
     end
     
+    def pricing
+      render :layout => false
+    end
+    
       protected
   def intercom_shutdown
     IntercomRails::ShutdownHelper.intercom_shutdown(session, cookies)
